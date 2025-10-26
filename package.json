@@ -36,6 +36,11 @@
   "netlify": {
     "plugins": []
   },
+  "functions": {
+    "netlify/functions/server.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "engines": {
     "node": ">=14.0.0"
   }
