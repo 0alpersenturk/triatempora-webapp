@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Explore ancient civilizations, UFO encounters, consciousness mysteries, and forbidden science. Uncover hidden truths about lost technologies, secret government projects, and unexplained phenomena. Time is not a straight line.">
+    <meta name="keywords" content="ancient wisdom, lost civilizations, consciousness, astral projection, UFO sightings, alien contact, conspiracy theories, new world order, forbidden science, free energy, mystical geography, ley lines, secret projects, MKUltra, government cover-ups">
+    <title>Triatempora - Ancient Wisdom, Consciousness & Hidden Truths</title>
+    
+    <!-- Favicon - Multiple sizes for better display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://triatempora.com/">
+    <meta property="og:title" content="Triatempora - Ancient Wisdom, Consciousness & Hidden Truths">
+    <meta property="og:description" content="Discover ancient wisdom, consciousness mysteries, UFO files, conspiracy theories, and forbidden science. Time is not a straight line - explore hidden truths and unexplained phenomena.">
+    <meta property="og:image" content="https://triatempora.com/triatemporalogo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://triatempora.com/">
+    <meta name="twitter:title" content="Triatempora - Ancient Wisdom, Consciousness & Hidden Truths">
+    <meta name="twitter:description" content="Discover ancient wisdom, consciousness mysteries, UFO files, conspiracy theories, and forbidden science. Time is not a straight line.">
+    <meta name="twitter:image" content="https://triatemporalogo.png">
+    <meta name="twitter:site" content="@triatempora">
+    
+    <!-- Additional Social -->
+    <meta property="og:site_name" content="Triatempora">
+    <meta property="article:author" content="https://instagram.com/triatempora">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="triatemporalogo.png" as="image">
+    
+    <!-- Prevent theme flash - Load theme immediately -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://triatempora.com/">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Triatempora RSS Feed" href="https://triatempora.com/rss.xml">
+    
+    <!-- hreflang tags for SEO -->
+    <link rel="alternate" hreflang="en" href="https://triatempora.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://triatempora.com/" />
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=block" rel="stylesheet">
+    
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="container">
+            <!-- Tagline Section -->
+            <div class="tagline-section">
+                <div class="tagline">Time is not a straight line</div>
+            </div>
+
+            <!-- Latest Revelations Carousel -->
+            <section class="recent-posts">
+                <div class="recent-posts-title">
+                    <h3>Recent Explorations</h3>
+                </div>
+                <div class="carousel-container">
+                    <div class="posts-list" id="postsList">
+                        <!-- Carousel content will be dynamically loaded by carousel-data.js -->
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn play-pause-btn" id="playPauseBtn" aria-label="Play/Pause">❚❚</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </section>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search mysteries, ancient wisdom, consciousness, UFOs..." autocomplete="off">
+                <button class="search-clear" id="searchClear">&times;</button>
+                <div class="search-icon">🔍</div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <!-- Random Article Button -->
+            <button class="random-article-btn" id="randomArticleBtn" onclick="surpriseMe()">
+                <span class="random-icon">🎲</span>
+                <span>Surprise Me!</span>
+            </button>
+
+            <div class="categories">
+                <a href="/the-matrix" class="category-card the-matrix">
+                    <div class="category-icon">🟢</div>
+                    <div class="category-info">
+                        <div class="category-name">The Matrix - Digital Reality</div>
+                        <div class="category-desc">Red pill or blue pill? Explore simulation theory and the nature of reality</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">12</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                    <canvas class="matrix-rain"></canvas>
+                </a>
+
+                <a href="/ancient-wisdom" class="category-card ancient-wisdom">
+                    <div class="category-icon">🏺</div>
+                    <div class="category-info">
+                        <div class="category-name">Ancient Wisdom & Lost Civilizations</div>
+                        <div class="category-desc">Explore ancient mysteries, lost civilizations, and forgotten knowledge</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">12</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/consciousness" class="category-card consciousness">
+                    <div class="category-icon">👁</div>
+                    <div class="category-info">
+                        <div class="category-name">Consciousness & Spiritual Reality</div>
+                        <div class="category-desc">Journey into altered states, psychic phenomena, and spiritual dimensions</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">10</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/conspiracy-theories" class="category-card conspiracy-theories">
+                    <div class="category-icon">🔺</div>
+                    <div class="category-info">
+                        <div class="category-name">Conspiracy Theories & Global Agenda</div>
+                        <div class="category-desc">Uncover hidden agendas, secret societies, and global power structures</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">11</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/forbidden-science" class="category-card forbidden-science">
+                    <div class="category-icon">⚛️</div>
+                    <div class="category-info">
+                        <div class="category-name">Forbidden Science & Experiments</div>
+                        <div class="category-desc">Uncover suppressed research, controversial experiments, and banned technologies</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">9</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/mystical-geography" class="category-card mystical-geography">
+                    <div class="category-icon">🗿</div>
+                    <div class="category-info">
+                        <div class="category-name">Mystical Geography & Hidden Places</div>
+                        <div class="category-desc">Discover legendary locations, lost cities, and mysterious landmarks</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">6</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/secret-projects" class="category-card secret-projects">
+                    <div class="category-icon">🔐</div>
+                    <div class="category-info">
+                        <div class="category-name">Secret Projects & Cover-ups</div>
+                        <div class="category-desc">Investigate classified programs, mind control, and government experiments</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">11</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/ufo-files" class="category-card ufo-files">
+                    <div class="category-icon">🛸</div>
+                    <div class="category-info">
+                        <div class="category-name">UFO Files & Alien Contact</div>
+                        <div class="category-desc">Examine UFO sightings, alien encounters, and extraterrestrial evidence</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">9</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+
+                <a href="/unexplained-phenomena" class="category-card unexplained-phenomena">
+                    <div class="category-icon">🌀</div>
+                    <div class="category-info">
+                        <div class="category-name">Unexplained Phenomena & Mysteries</div>
+                        <div class="category-desc">Explore baffling mysteries, paranormal events, and phenomena that defy explanation</div>
+                    </div>
+                    <div class="category-count">
+                        <div class="count-number">5</div>
+                        <div class="count-label">articles</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    
+    <!-- Fallback Confetti Library -->
+    <script>
+        // Fallback confetti if main CDN fails
+        if (typeof confetti === 'undefined') {
+            console.log('🔄 Loading fallback confetti...');
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.2/confetti.browser.min.js';
+            script.onload = function() {
+                console.log('✅ Fallback confetti loaded!');
+            };
+            script.onerror = function() {
+                console.log('❌ Both confetti CDNs failed');
+            };
+            document.head.appendChild(script);
+        }
+    </script>
+    
+    <!-- Surprise Me Function -->
+    <script>
+        function surpriseMe() {
+            console.log('🎲 Surprise Me button clicked!');
+            
+            // Try confetti effect
+            if (typeof confetti !== 'undefined') {
+                console.log('✅ Confetti available!');
+                try {
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                    console.log('🎉 Confetti fired!');
+                } catch (error) {
+                    console.log('❌ Confetti error:', error);
+                }
+            } else {
+                console.log('❌ No confetti, using visual feedback');
+            }
+            
+            // Always show visual feedback
+            const btn = document.getElementById('randomArticleBtn');
+            btn.style.transform = 'scale(1.2)';
+            btn.style.backgroundColor = '#ff6b6b';
+            btn.style.boxShadow = '0 0 20px #ff6b6b';
+            setTimeout(() => {
+                btn.style.transform = 'scale(1)';
+                btn.style.backgroundColor = '';
+                btn.style.boxShadow = '';
+            }, 300);
+            
+            // Random article selection
+            const articles = [
+                'ancient/halloween',
+                'ufo/tic-tac', 
+                'consciousness/akashic',
+                'conspiracy/illuminati',
+                'forbidden/freeenergy',
+                'mystical/sedona',
+                'secret/mkultra',
+                'unexplained/3iatlas',
+                'matrix/neo'
+            ];
+            
+            const randomArticle = articles[Math.floor(Math.random() * articles.length)];
+            const targetUrl = '/' + randomArticle;
+            
+            console.log('🎯 Navigating to:', targetUrl);
+            
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 1500);
+        }
+    </script>
+
+    <!-- Common JavaScript -->
+    <script src="/common.js"></script>
+    <script src="/carousel-data.js"></script>
+    <script src="/search-data.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW04R9KVD2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GW04R9KVD2');
+    </script>
+
+</body>
+</html>

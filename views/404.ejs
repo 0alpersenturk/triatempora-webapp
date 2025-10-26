@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW04R9KVD2"></script>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Triatempora. The mystery you're looking for doesn't exist in this timeline.">
+    <title>404 - Page Not Found | Triatempora</title>
+        <!-- Favicon - Multiple sizes for better display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://triatempora.com/404.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Triatempora RSS Feed" href="https://triatempora.com/rss.xml">
+    
+        <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=block" rel="stylesheet">
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="/common.css">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --accent-color: #dc2626;
+        }
+
+        html[data-theme="dark"],
+        [data-theme="dark"] {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --card-bg: #1a1a1a;
+            --border-color: #333333;
+            --shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: 100px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+                /* Hamburger Menu Button */
+        .hamburger-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-menu:hover {
+            transform: scale(1.1);
+        }
+
+        .hamburger-line {
+            width: 30px;
+            height: 3px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-menu.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger-menu.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: var(--bg-primary);
+            border-left: 1px solid var(--border-color);
+            box-shadow: -2px 0 10px var(--shadow);
+            z-index: 1000;
+            transition: right 0.3s ease;
+            padding: 100px 30px 30px;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu-section {
+            margin-bottom: 30px;
+        }
+
+        .menu-section-title {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .menu-social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-social-link {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .menu-social-link:hover {
+            background: var(--bg-secondary);
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        .menu-social-link img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .menu-theme-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .menu-theme-label {
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 140px;
+            }            .header-social {
+                order: 3;
+            }
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 80px;
+        }
+
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: var(--text-primary);
+            letter-spacing: 2px;
+            text-transform: lowercase;
+        }
+
+        .x-link:hover,
+        .x-link:focus {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .x-link:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px var(--shadow);
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .error-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-secondary);
+            transform: translateY(-2px);
+        }
+
+        .search-suggestion {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .search-suggestion h3 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .search-suggestion p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        .search-box::placeholder {
+            color: var(--text-secondary);
+        }
+
+        /* Theme Toggle Switch */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: var(--border-color);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        .switch-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 24px;
+            height: 24px;
+            background: var(--card-bg);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .switch-slider {
+            transform: translateX(30px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;}
+
+        .social-link:hover {
+            transform: scale(1.2);
+        }
+
+        .social-link img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 24px;
+        }
+
+        .newsletter-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .newsletter-input {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+            border-color: var(--accent-color);
+        }
+
+        .newsletter-btn {
+            padding: 10px 15px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .newsletter-btn:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 50px;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+        }
+
+        .footer-tagline {
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-disclaimer {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .footer-updated {
+            color: var(--text-secondary);
+            font-size: 0.65rem;
+            margin-top: 8px;
+            opacity: 0.7;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: #b91c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px var(--shadow);
+        }
+
+        .back-to-top:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+            
+
+            .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .site-title {
+                font-size: 2rem;
+            }
+
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-title {
+                font-size: 2rem;
+            }
+
+
+            .switch-slider {
+                width: 20px;
+                height: 20px;
+                font-size: 0.6rem;
+            }
+
+            [data-theme="dark"] .switch-slider {
+                transform: translateX(25px);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px 20px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+                    }
+    </style>
+    <!-- Prevent theme flash - Load theme immediately -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo-section">
+                <img src="triatemporalogo.png" alt="Triatempora Logo" class="logo-img" width="80" height="80" loading="eager" fetchpriority="high">
+                <h1 class="site-title">triatempora</h1>
+            </a>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-section">
+            <div class="menu-section-title">Social Media</div>
+            <div class="menu-social-links">
+                <a href="https://x.com/triatempora" class="menu-social-link" target="_blank" rel="noopener noreferrer">
+                    <span>𝕏</span>
+                    <span>X (Twitter)</span>
+                </a>
+                <a href="https://instagram.com/triatempora" class="menu-social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="instagramlogo.png" alt="Instagram" width="24" height="24" loading="lazy">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC1_fND6kug5B4vGRuQYAIww" class="menu-social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="youtube.png" alt="YouTube" width="24" height="24" loading="lazy">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://open.spotify.com/show/7MZho0TgMshiE2XIvaNCzk?si=KG9nnArHQsuY9CL3fNGupg" class="menu-social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="spotify.png" alt="Spotify" width="24" height="24" loading="lazy">
+                    <span>Spotify</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <div class="menu-section-title">Theme</div>
+            <div class="menu-theme-toggle">
+                <span class="menu-theme-label">Dark Mode</span>
+                <div class="theme-toggle" id="themeToggle">
+                    <div class="switch-slider">☀️</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Mystery Not Found</h1>
+            <p class="error-message">The truth you're seeking doesn't exist in this timeline.</p>
+            <p class="error-description">The page you're looking for may have been moved to another dimension, erased from history, or simply doesn't exist yet. Time is not a straight line, after all.</p>
+            
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary">
+                    🏠 Return to Home
+                </a>
+                <a href="javascript:history.back()" class="btn btn-secondary">
+                    ← Go Back
+                </a>
+            </div>
+
+            <div class="search-suggestion">
+                <h3>🔍 Search for Mysteries</h3>
+                <p>Maybe the truth you seek is hidden elsewhere. Try searching our collection of mysteries:</p>
+                <input type="text" class="search-box" placeholder="Search for ancient wisdom, consciousness, UFOs, conspiracies..." id="searchInput">
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="switch-slider">☀️</div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"  aria-label="Back to top" title="Back to top">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="/ancient-wisdom">Ancient Wisdom</a></li>
+                    <li><a href="/consciousness">Consciousness</a></li>
+                    <li><a href="/ufo-files">UFO Files</a></li>
+                    <li><a href="/conspiracy-theories">Conspiracy Theories</a></li>
+                    <li><a href="/forbidden-science">Forbidden Science</a></li>
+                    <li><a href="/mystical-geography">Mystical Geography</a></li>
+                    <li><a href="/secret-projects">Secret Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p class="newsletter-text">Get notified when we publish new mysteries</p>
+                <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="bot-field" />
+                    <input type="email" name="email" placeholder="Your email address" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://x.com/triatempora" class="social-link" target="_blank" rel="noopener noreferrer" title="Follow us on X">𝕏</a>
+                    <a href="https://instagram.com/triatempora" class="social-link" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+                        <img src="instagramlogo.png" width="24" height="24" loading="lazy" alt="Instagram">
+                    </a>
+                    <a href="rss.xml" class="social-link" target="_blank" title="RSS Feed">📡</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="triatemporalogo.png" alt="Triatempora Logo" class="footer-logo-img" width="50" height="50" loading="lazy">
+                <span class="footer-title">triatempora</span>
+            </div>
+            <p class="footer-tagline">Time is not a straight line</p>
+            <p class="footer-disclaimer">This site is for entertainment purposes. Contains theories and speculations.</p>
+            <p class="footer-copyright">© 2025 Triatempora - All rights reserved</p>
+        </div>
+    </footer>
+
+    
+    <script>
+    // Theme toggle functionality
+    function toggleTheme() {
+        try {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const slider = document.querySelector('.switch-slider');
+            if (slider) {
+                slider.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+            }
+        } catch (error) {
+            console.error('Theme toggle error:', error);
+        }
+    }
+
+    // Initialize theme
+    function initTheme() {
+        try {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+            
+            const slider = document.querySelector('.switch-slider');
+            if (slider) {
+                slider.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+            }
+        } catch (error) {
+            console.warn('Theme init error:', error);
+        }
+    }
+
+    // Back to top functionality
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    function toggleBackToTop() {
+        const backToTopBtn = document.querySelector('.back-to-top');
+        if (!backToTopBtn) return;
+        
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    }
+
+    // Copy to clipboard
+    function copyToClipboard() {
+        const url = window.location.href;
+        const btn = document.querySelector('.share-copy');
+        const originalText = btn.innerHTML;
+        
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(function() {
+                btn.innerHTML = '<span>✅</span> Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            }).catch(function(err) {
+                fallbackCopyToClipboard(url, btn, originalText);
+            });
+        } else {
+            fallbackCopyToClipboard(url, btn, originalText);
+        }
+    }
+    
+    // Fallback copy method
+    function fallbackCopyToClipboard(text, btn, originalText) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        try {
+            const successful = document.execCommand('copy');
+            if (successful) {
+                btn.innerHTML = '<span>✅</span> Copied!';
+            } else {
+                btn.innerHTML = '<span>❌</span> Failed';
+            }
+        } catch (err) {
+            btn.innerHTML = '<span>❌</span> Failed';
+        }
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+        }, 2000);
+        
+        document.body.removeChild(textArea);
+    }
+
+        }
+
+    // Cookie Consent
+    function showCookieConsent() {
+        const consent = localStorage.getItem('cookie-consent');
+        if (!consent) {
+            setTimeout(() => {
+                const banner = document.getElementById('cookieConsent');
+                if (banner) {
+                    banner.classList.add('show');
+                }
+            }, 2000);
+        }
+    }
+
+    function acceptCookies() {
+        localStorage.setItem('cookie-consent', 'accepted');
+        const banner = document.getElementById('cookieConsent');
+        if (banner) {
+            banner.classList.remove('show');
+        }
+    }
+
+    function declineCookies() {
+        localStorage.setItem('cookie-consent', 'declined');
+        const banner = document.getElementById('cookieConsent');
+        if (banner) {
+            banner.classList.remove('show');
+        }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        initTheme();
+        showCookieConsent();
+        
+        // Back to top button
+        window.addEventListener('scroll', toggleBackToTop, { passive: true });
+                        // Back to top button click
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', scrollToTop);
+        }
+        
+        // Theme toggle event
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+            // Hamburger menu functionality
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuOverlay = document.getElementById('menuOverlay');
+            
+            function toggleMenu() {
+                hamburgerMenu.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            }
+            
+            if (hamburgerMenu) {
+                hamburgerMenu.addEventListener('click', toggleMenu);
+            }
+            
+            if (menuOverlay) {
+                menuOverlay.addEventListener('click', toggleMenu);
+            }
+            
+        
+        // Newsletter form
+        const form = document.querySelector('.newsletter-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = this.querySelector('.newsletter-input');
+                const btn = this.querySelector('.newsletter-btn');
+                const originalText = btn.textContent;
+                
+                btn.textContent = 'Subscribed!';
+                btn.style.background = '#16a34a';
+                input.value = '';
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                }, 3000);
+            });
+        }
+    });
+</script>
+
+    <!-- Common JS (Header/Footer loader) -->
+    <script src="/common.js"></script>
+
+</body>
+</html>

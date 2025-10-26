@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW04R9KVD2"></script>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbidden Science & Lost Technologies - Triatempora</title>
+        <!-- Favicon - Multiple sizes for better display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://triatempora.com/forbidden-science.html">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Triatempora RSS Feed" href="https://triatempora.com/rss.xml">
+    
+        <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=block" rel="stylesheet">
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="/common.css">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --accent-color: #dc2626;
+            --category-color: #00ff00;
+        }
+
+        html[data-theme="dark"],
+        [data-theme="dark"] {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --card-bg: #1a1a1a;
+            --border-color: #333333;
+            --shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        body {
+            padding-top: 100px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            line-height: 1.6;
+        }
+
+                /* Kategori ikonları için temel düzenlemeler */
+        .category-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px 10px;
+            margin-top: 10px;
+        }
+
+        .category-icon-nav {
+            font-size: 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            min-height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .category-icon-nav:hover {
+            transform: scale(1.2);
+            border-color: var(--category-color);
+        }
+
+        .category-icon-nav.active {
+            border-color: var(--category-color);
+            background: rgba(138, 43, 226, 0.1);
+        }
+
+        /* Category header için genel düzenlemeler */
+        .category-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        /* Container düzenlemesi */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            padding-top: 20px;
+        }
+
+        
+        /* Mobil için özel düzenlemeler */
+        @media (max-width: 768px) {
+            .category-icons {
+                flex-wrap: nowrap;
+                gap: 8px;
+                padding: 15px 5px;
+                margin-top: 10px;
+                justify-content: center;
+                max-width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .category-icon-nav {
+                font-size: 1.3rem;
+                padding: 6px;
+                width: 42px;
+                height: 42px;
+                min-width: 42px;
+                min-height: 42px;
+                max-width: 42px;
+                max-height: 42px;
+                flex-shrink: 0;
+            }
+
+            .category-title {
+                font-size: 1.8rem;
+                padding: 0 10px;
+                margin-top: 10px;
+            }
+
+            .category-description {
+                font-size: 1rem;
+                padding: 0 15px;
+                margin-top: 8px;
+            }
+
+            .category-header {
+                margin-bottom: 30px;
+                padding-top: 5px;
+            }
+
+            .container {
+                padding-top: 15px;
+            }
+        }
+
+        /* Çok küçük ekranlar için (380px ve altı) */
+        @media (max-width: 380px) {
+            .category-icons {
+                gap: 8px;
+                padding: 15px 5px;
+                margin-top: 12px;
+            }
+
+            .category-icon-nav {
+                font-size: 1.3rem;
+                padding: 6px;
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                min-height: 44px;
+                max-width: 44px;
+                max-height: 44px;
+                flex-shrink: 0;
+            }
+
+            .category-title {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        
+
+        
+
+        
+
+        
+
+        /* Category hover effects - each category always shows its own color */
+
+        .category-title {
+            font-size: 2.5rem;
+            color: var(--category-color);
+            margin-bottom: 15px;
+        }
+
+        .category-description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Search */
+        .search-section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--category-color);
+            box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px var(--shadow);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: row;
+            height: 120px;
+        }
+
+        .article-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px var(--shadow);
+            border-color: var(--category-color);
+        }
+
+        .article-image {
+            width: 120px;
+            min-width: 120px;
+            height: 100%;
+            min-height: 120px; /* Prevent CLS */
+            object-fit: cover;
+            background: var(--bg-secondary);
+        }
+
+        .article-content {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .article-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-excerpt {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            line-height: 1.3;
+            margin-bottom: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+/* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;}
+
+        .social-link:hover {
+            transform: scale(1.2);
+        }
+
+        .social-link img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 24px;
+        }
+
+        .newsletter-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .newsletter-input {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .newsletter-btn {
+            padding: 10px 15px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .newsletter-btn:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 50px;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+        }
+
+        .footer-tagline {
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-disclaimer {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .footer-updated {
+            color: var(--text-secondary);
+            font-size: 0.65rem;
+            margin-top: 8px;
+            opacity: 0.7;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+            display: none;
+        }
+
+        .no-results-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {            .category-title {
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            
+
+            
+
+            
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: #b91c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px var(--shadow);
+        }
+
+        .back-to-top:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 380px) {
+            
+
+            
+        }
+    </style>
+    <!-- Prevent theme flash - Load theme immediately -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+<!-- Main Content -->
+    <div class="container">
+        <div class="category-header">
+            <h1 class="category-title">Forbidden Science & Experiments</h1>
+            <p class="category-description">Explore suppressed inventions, alternative energy sources, and revolutionary discoveries that challenge mainstream science.</p>
+        </div>
+
+        <!-- Search -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search forbidden science..." id="searchInput">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesGrid">
+            <a href="/forbidden/quantum-eraser" class="article-card">
+                <img src="/images/eraser1.jpg" alt="Quantum Eraser Experiment" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Quantum Eraser Experiment: Can We Change Our Fate?</h2>
+                    <p class="article-excerpt">The quantum eraser suggests the future can change the past. Explore retrocausality, free will, and whether we can alter destiny</p>
+                    <div class="article-meta">
+                        </div>
+                </div>
+            </a>
+
+            <a href="/forbidden/universe25" class="article-card">
+                <img src="/images/251.jpg" alt="Universe 25 Experiment" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Universe 25 Experiment: When Paradise Turned into Hell</h2>
+                    <p class="article-excerpt">A utopian mouse society that collapsed into chaos, revealing dark truths about overpopulation and social breakdown</p>
+                    <div class="article-meta">
+                        </div>
+                </div>
+            </a>
+
+            <a href="/forbidden/369" class="article-card">
+                <img src="/images/3693.jpg" alt="Tesla 3-6-9" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Nikola Tesla's 3-6-9 Secret: The Key to the Universe</h2>
+                    <p class="article-excerpt">Discover Tesla's obsession with the numbers 3, 6, and 9, and why he believed these numbers held the secrets to universal energy and mathematics.</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/freeenergy" class="article-card">
+                <img src="/images/machines2.jpg" alt="Infinite Energy Machines" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Free Energy Machines: What Happened to the Inventors</h2>
+                    <p class="article-excerpt">The mysterious disappearances and deaths of inventors who claimed to have created free energy devices. Coincidence or suppression?</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/water" class="article-card">
+                <img src="/images/water2.jpg" alt="Water Memory" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Hidden Memory of Water: The Banned Science</h2>
+                    <p class="article-excerpt">Jacques Benveniste's controversial experiments suggesting water retains memory of substances. Why was this research suppressed?</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/ppower" class="article-card">
+                <img src="/images/ppower3.jpg" alt="Pyramid Power" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Tesla Knew the Secret: Pyramids as Ancient Power Plants</h2>
+                    <p class="article-excerpt">Evidence that the Great Pyramid was an ancient energy generator using Earth's natural electromagnetic field and acoustic resonance.</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/kozyrev" class="article-card">
+                <img src="/images/kozyrev2.jpg" alt="Kozyrev Mirrors" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Kozyrev Mirrors: Time Travel Experiments and Paranormal Events</h2>
+                    <p class="article-excerpt">Russian scientist Nikolai Kozyrev's aluminum mirrors that allegedly bent time and space, causing extraordinary psychological phenomena.</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/hemp" class="article-card">
+                <img src="/images/hemp1.jpg" alt="Hemp Plant" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Hemp: The Miracle Plant Hidden from Humanity</h2>
+                    <p class="article-excerpt">How hemp could replace petroleum, save forests, and revolutionize medicine. The real reasons behind its prohibition.</p>
+                    </div>
+            </a>
+
+            <a href="/forbidden/hiddeninventions" class="article-card">
+                <img src="/images/5invention1.jpg" alt="Lost Inventions" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">5 Revolutionary Inventions Hidden from Humanity and Destroyed by Mysterious Forces</h2>
+                    <p class="article-excerpt">Revolutionary technologies that disappeared: Rife's cancer cure, Meyer's water car, and other suppressed innovations that threatened powerful industries.</p>
+                    </div>
+            </a>
+        </div>
+
+        <!-- No Results -->
+        <div class="no-results" id="noResults">
+            <div class="no-results-icon">🔍</div>
+            <h3>No forbidden science found</h3>
+            <p>Try searching for something else...</p>
+        </div>
+    </div>
+
+    
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GW04R9KVD2');
+
+// Theme toggle functionality
+        function toggleTheme() {
+            try {
+                const body = document.body;
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                body.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                const slider = document.querySelector('.switch-slider');
+                if (slider) {
+                    slider.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+                }
+            } catch (error) {
+                console.error('Theme toggle error:', error);
+            }
+        }
+
+        // Initialize theme
+        function initTheme() {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.body.setAttribute('data-theme', savedTheme);
+                
+                const slider = document.querySelector('.switch-slider');
+                if (slider) {
+                    slider.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+                }
+            } catch (error) {
+                console.warn('Theme init error:', error);
+            }
+        }
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleBackToTop() {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (!backToTopBtn) return;
+            
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+
+        // Update last updated date
+        function updateLastUpdated() {
+            const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                          'July', 'August', 'September', 'October', 'November', 'December'];
+            const now = new Date();
+            const month = months[now.getMonth()];
+            const year = now.getFullYear();
+            
+            const lastUpdatedElement = document.getElementById('lastUpdated');
+            if (lastUpdatedElement) {
+                lastUpdatedElement.textContent = `Last updated: ${month} ${year}`;
+            }
+        }
+
+        // Search functionality
+        function initSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const articlesGrid = document.getElementById('articlesGrid');
+            const noResults = document.getElementById('noResults');
+            
+            if (!searchInput || !articlesGrid || !noResults) return;
+            
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase().trim();
+                const articles = articlesGrid.querySelectorAll('.article-card');
+                let visibleCount = 0;
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.article-title').textContent.toLowerCase();
+                    const excerpt = article.querySelector('.article-excerpt').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                        article.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+                
+                if (visibleCount === 0 && searchTerm !== '') {
+                    noResults.style.display = 'block';
+                    articlesGrid.style.display = 'none';
+                } else {
+                    noResults.style.display = 'none';
+                    articlesGrid.style.display = 'grid';
+                }
+            });
+        }
+
+        // Shuffle articles functionality
+        function shuffleArticles() {
+            const articlesGrid = document.getElementById('articlesGrid');
+            if (!articlesGrid) return;
+            
+            const articles = Array.from(articlesGrid.children);
+            
+            // Keep first 2 articles fixed, shuffle the rest
+            const fixedArticles = articles.slice(0, 2);
+            const shuffleableArticles = articles.slice(2);
+            
+            // Shuffle the rest
+            for (let i = shuffleableArticles.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffleableArticles[i], shuffleableArticles[j]] = [shuffleableArticles[j], shuffleableArticles[i]];
+            }
+            
+            // Clear grid and re-append in new order
+            articlesGrid.innerHTML = '';
+            fixedArticles.forEach(article => articlesGrid.appendChild(article));
+            shuffleableArticles.forEach(article => articlesGrid.appendChild(article));
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            initTheme();
+            updateLastUpdated();
+            initSearch();
+            shuffleArticles();
+            
+            // Theme toggle event
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+            // Hamburger menu functionality
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuOverlay = document.getElementById('menuOverlay');
+            
+            function toggleMenu() {
+                hamburgerMenu.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            }
+            
+            if (hamburgerMenu) {
+                hamburgerMenu.addEventListener('click', toggleMenu);
+            }
+            
+            if (menuOverlay) {
+                menuOverlay.addEventListener('click', toggleMenu);
+            }
+            
+            
+            // Back to top button
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        });
+
+        // Form submission handler
+        document.addEventListener('submit', function (e) {
+            if (e.target && e.target.name === 'newsletter') {
+                e.preventDefault();
+                alert('Thank you for subscribing! You will receive updates about new mysteries.');
+            }
+        });
+    </script>
+
+    <!-- Common JS (Header/Footer loader) -->
+    <script src="/common.js"></script>
+
+</body>
+</html>

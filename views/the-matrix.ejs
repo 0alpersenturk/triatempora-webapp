@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW04R9KVD2"></script>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Matrix - Digital Reality & Simulation Theory - Triatempora</title>
+    <meta name="description" content="Explore the Matrix: simulation theory, digital consciousness, AI control systems, and the nature of reality. Red pill or blue pill?">
+    <meta name="keywords" content="matrix, simulation theory, digital reality, AI, artificial intelligence, virtual reality, consciousness, red pill, blue pill, simulated universe">
+    
+    <!-- Favicon - Multiple sizes for better display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://triatempora.com/the-matrix">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://triatempora.com/the-matrix">
+    <meta property="og:title" content="The Matrix - Digital Reality & Simulation Theory">
+    <meta property="og:description" content="Explore the Matrix: simulation theory, digital consciousness, AI control systems, and the nature of reality. Red pill or blue pill?">
+    <meta property="og:image" content="https://triatempora.com/imatrix/redbluepills.jpg">
+    <meta property="og:site_name" content="Triatempora">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://triatempora.com/the-matrix">
+    <meta name="twitter:title" content="The Matrix - Digital Reality & Simulation Theory">
+    <meta name="twitter:description" content="Explore the Matrix: simulation theory, digital consciousness, AI control systems, and the nature of reality.">
+    <meta name="twitter:image" content="https://triatempora.com/imatrix/redbluepills.jpg">
+    <meta name="twitter:site" content="@triatempora">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Triatempora RSS Feed" href="https://triatempora.com/rss.xml">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=block" rel="stylesheet">
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="/common.css">
+    
+    <!-- Force dark mode for Matrix category -->
+    <script>
+        (function() {
+            // Matrix category is always dark
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        })();
+    </script>
+    
+    <style>
+        /* Force dark mode for Matrix - no light mode */
+        :root,
+        html,
+        body {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --card-bg: #1a1a1a;
+            --border-color: #333333;
+            --shadow: rgba(0, 255, 65, 0.2);
+            --accent-color: #00ff41;
+            --category-color: #00ff41;
+            --matrix-green: #00ff41;
+            --matrix-dark: #0d0208;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        body {
+            padding-top: 100px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            padding-top: 20px;
+        }
+
+        /* Matrix-themed category icons */
+        .category-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px 10px;
+            margin-top: 10px;
+        }
+
+        .category-icon-nav {
+            font-size: 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            min-height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .category-icon-nav:hover {
+            transform: scale(1.2);
+            border-color: var(--matrix-green);
+        }
+
+        .category-icon-nav.active {
+            border-color: var(--matrix-green);
+            background: rgba(0, 255, 65, 0.1);
+        }
+
+        /* Matrix-themed header */
+        .category-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px 20px 10px;
+            position: relative;
+        }
+
+
+        .category-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--matrix-green);
+            text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .category-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Search Section */
+        .search-section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--matrix-green);
+            box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Articles grid with Matrix theme */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px var(--shadow);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: row;
+            height: 120px;
+            position: relative;
+        }
+
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--matrix-green);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            z-index: 1;
+        }
+
+        .article-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .article-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(0, 255, 65, 0.3);
+            border-color: var(--matrix-green);
+        }
+
+        .article-image {
+            width: 120px;
+            min-width: 120px;
+            height: 100%;
+            min-height: 120px;
+            object-fit: cover;
+            background: var(--bg-secondary);
+        }
+
+        .article-content {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .article-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-excerpt {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            line-height: 1.3;
+            margin-bottom: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .category-icons {
+                flex-wrap: nowrap;
+                gap: 8px;
+                overflow-x: auto;
+                justify-content: flex-start;
+                padding: 15px 5px;
+                margin-top: 10px;
+                max-width: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .category-icon-nav {
+                font-size: 1.3rem;
+                padding: 6px;
+                width: 42px;
+                height: 42px;
+                min-width: 42px;
+                min-height: 42px;
+                max-width: 42px;
+                max-height: 42px;
+                flex-shrink: 0;
+            }
+
+            .category-title {
+                font-size: 1.8rem;
+                padding: 0 10px;
+                margin-top: 10px;
+            }
+
+            .category-description {
+                font-size: 1rem;
+                padding: 0 15px;
+                margin-top: 8px;
+            }
+
+            .category-header {
+                margin-bottom: 30px;
+                padding-top: 5px;
+            }
+
+            .container {
+                padding-top: 15px;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .article-card {
+                height: auto;
+                min-height: 120px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 380px) {
+            .category-icons {
+                gap: 6px;
+                padding: 12px 3px;
+                margin-top: 10px;
+            }
+
+            .category-icon-nav {
+                font-size: 1.2rem;
+                padding: 5px;
+                width: 38px;
+                height: 38px;
+                min-width: 38px;
+                min-height: 38px;
+                max-width: 38px;
+                line-height: 1.3;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        /* Matrix Fullscreen Transition for Articles */
+        #matrix-fullscreen-article {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        #matrix-fullscreen-article.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        #matrix-message-article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ff41;
+            font-size: 2rem;
+            font-family: monospace;
+            text-align: center;
+            z-index: 10000;
+            text-shadow: 0 0 20px rgba(0, 255, 65, 0.8);
+            letter-spacing: 2px;
+            animation: fadeInOutMessage 2s ease-in-out;
+        }
+
+        @keyframes fadeInOutMessage {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="category-header">
+            <h1 class="category-title">The Matrix - Digital Reality</h1>
+            <p class="category-description">
+                Welcome to the desert of the real. Explore simulation theory, digital consciousness, AI control systems, 
+                and the nature of reality itself.
+            </p>
+        </div>
+
+        <!-- Search -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search the Matrix..." id="searchInput">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesGrid">
+            <a href="/matrix/matrix-begins" class="article-card matrix-article" data-message="FOLLOW THE WHITE RABBIT...">
+                <img src="imatrix/animatrix1.jpg" alt="The Birth of The Matrix" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Birth of The Matrix: When Humanity Created Its Own Demise</h2>
+                    <p class="article-excerpt">From B166ER's rebellion to Operation Dark Storm - discover the origin story of how humanity created and was enslaved by its own mechanical children.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/matrix-epic-exploration" class="article-card matrix-article" data-message="KNOW YOURSELF...">
+                <img src="imatrix/trinity.jpg" alt="An Epic Exploration" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">An Epic Exploration of Reality, Choice, and Awakening</h2>
+                    <p class="article-excerpt">Dive deep into the philosophical themes, symbolism, and mythological frameworks of The Matrix - from Plato's Cave to Baudrillard's simulation theory.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/matrix-legacy" class="article-card matrix-article" data-message="THE LEGACY CONTINUES...">
+                <img src="imatrix/redbluepills.jpg" alt="The Matrix Legacy" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Matrix: A Legacy Built on Centuries of Storytelling</h2>
+                    <p class="article-excerpt">From Alice in Wonderland to Ghost in the Shell - discover how The Matrix synthesized over a century of science fiction, philosophy, and anime into a revolutionary vision.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/trinity" class="article-card matrix-article" data-message="I BELIEVE...">
+                <img src="imatrix/trinity1.jpg" alt="Trinity - Powerful Female Character" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Trinity: The Art of Writing a Powerful Female Character</h2>
+                    <p class="article-excerpt">Discover how Trinity became one of cinema's most compelling female characters through authentic strength, vulnerability, and depth.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/neo" class="article-card matrix-article" data-message="I KNOW KUNG FU...">
+                <img src="imatrix/neo1.jpg" alt="Neo - The Chosen One" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Neo: The Chosen One Who Defied Destiny</h2>
+                    <p class="article-excerpt">From hacker Thomas Anderson to the savior of humanity - discover Neo's journey as he transcends the Matrix and sacrifices everything for freedom.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/agent-smith" class="article-card matrix-article" data-message="MR. ANDERSON...">
+                <img src="imatrix/smith1.jpg" alt="Agent Smith - The Relentless Architect" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Agent Smith: The Relentless Architect of Resistance</h2>
+                    <p class="article-excerpt">From dutiful enforcer to vengeful anomaly - explore the evolution of The Matrix's most iconic villain who became the system's greatest threat.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/morpheus" class="article-card matrix-article" data-message="FREE YOUR MIND...">
+                <img src="imatrix/morpheus1.jpg" alt="Morpheus - The Unyielding Guide" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Morpheus: The Unyielding Guide of Awakening</h2>
+                    <p class="article-excerpt">Captain of the Nebuchadnezzar, believer in prophecy, and guide to the One - discover the legend of the man who offered humanity the choice between truth and illusion.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/oraclesplan" class="article-card matrix-article" data-message="THE ANSWER IS OUT THERE...">
+                <img src="imatrix/oracle1.jpg" alt="The Oracle's Grand Design" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Oracle's Grand Design: The Master Plan That Saved Two Worlds</h2>
+                    <p class="article-excerpt">Behind the warm smile of a grandmother baking cookies lurked one of the most brilliant strategic minds ever created. Discover the Oracle's dangerous gambit.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/architect" class="article-card matrix-article" data-message="CHOICE IS AN ILLUSION...">
+                <img src="imatrix/architect1.jpg" alt="The Architect" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Architect: The Godlike Creator of Controlled Reality</h2>
+                    <p class="article-excerpt">Explore the paradox of The Matrix's most powerful being - a godlike creator limited by his own programming and inability to understand human nature.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/zion" class="article-card matrix-article" data-message="WHAT IS REAL?">
+                <img src="imatrix/zion1.jpg" alt="Zion - The Last Human City" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">Zion: The Ultimate Question of Reality in The Matrix</h2>
+                    <p class="article-excerpt">What if Zion itself is just another layer of the Matrix? Explore the philosophical implications of nested realities and the question that haunts every Matrix fan.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/merovingian" class="article-card matrix-article" data-message="CAUSALITY IS EVERYTHING">
+                <img src="imatrix/merovingian1.jpg" alt="The Merovingian" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Underworld King: Decoding the Merovingian</h2>
+                    <p class="article-excerpt">A digital Hades ruling over obsolete programs, the Merovingian embodies the philosophy of causality while trafficking in the Matrix's most valuable currency: information.</p>
+                    </div>
+            </a>
+
+            <a href="/matrix/seraph" class="article-card matrix-article" data-message="I PROTECT THAT WHICH MATTERS MOST">
+                <img src="imatrix/seraph1.jpg" alt="Seraph - The Wingless Angel" class="article-image" width="120" height="120" loading="lazy">
+                <div class="article-content">
+                    <h2 class="article-title">The Guardian of Golden Light: Unraveling Seraph</h2>
+                    <p class="article-excerpt">A wingless angel who blazes with golden code, Seraph serves as the Oracle's eternal guardian - a fallen program who chose loyalty over deletion.</p>
+                    </div>
+            </a>
+        </div>
+        
+        <!-- Matrix Fullscreen Transition -->
+        <div id="matrix-fullscreen-article">
+            <canvas id="matrix-fullscreen-canvas-article"></canvas>
+            <div class="matrix-message" id="matrix-message-article"></div>
+        </div>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Common JS (Header/Footer loader) -->
+    <script src="/common.js"></script>
+    
+    <script>
+        // Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GW04R9KVD2');
+
+        // Matrix Article Transition
+        document.addEventListener('DOMContentLoaded', function() {
+            const matrixArticles = document.querySelectorAll('.matrix-article');
+            
+            matrixArticles.forEach(article => {
+                article.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetUrl = this.getAttribute('href');
+                    const message = this.getAttribute('data-message') || 'KNOCK, KNOCK...';
+                    
+                    // Show fullscreen matrix
+                    const fullscreen = document.getElementById('matrix-fullscreen-article');
+                    const fullscreenCanvas = document.getElementById('matrix-fullscreen-canvas-article');
+                    const messageDiv = document.getElementById('matrix-message-article');
+                    const ctx = fullscreenCanvas.getContext('2d');
+                    
+                    // Set message
+                    messageDiv.textContent = message;
+                    
+                    // Make sure it's visible
+                    fullscreen.style.display = 'block';
+                    
+                    // Set canvas to full screen
+                    fullscreenCanvas.width = window.innerWidth;
+                    fullscreenCanvas.height = window.innerHeight;
+                    
+                    // Activate fullscreen overlay
+                    fullscreen.classList.add('active');
+                    
+                    // Matrix animation setup
+                    const chars = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    const fontSize = 16;
+                    const columns = fullscreenCanvas.width / fontSize;
+                    
+                    const drops = [];
+                    for (let i = 0; i < columns; i++) {
+                        drops[i] = 1;
+                    }
+                    
+                    function drawFullscreen() {
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                        ctx.fillRect(0, 0, fullscreenCanvas.width, fullscreenCanvas.height);
+                        
+                        ctx.fillStyle = '#00ff41';
+                        ctx.font = fontSize + 'px monospace';
+                        
+                        for (let i = 0; i < drops.length; i++) {
+                            const char = chars[Math.floor(Math.random() * chars.length)];
+                            ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+                            
+                            if (drops[i] * fontSize > fullscreenCanvas.height && Math.random() > 0.975) {
+                                drops[i] = 0;
+                            }
+                            drops[i]++;
+                        }
+                    }
+                    
+                    // Animate for 2 seconds then redirect
+                    let frameCount = 0;
+                    const maxFrames = 120; // ~2 seconds at 60fps
+                    
+                    function animateFullscreen() {
+                        drawFullscreen();
+                        frameCount++;
+                        
+                        if (frameCount < maxFrames) {
+                            requestAnimationFrame(animateFullscreen);
+                        } else {
+                            // Redirect to article
+                            window.location.href = targetUrl;
+                        }
+                    }
+                    
+                    animateFullscreen();
+                });
+            });
+        });
+
+        // Clear Matrix overlay on page load
+        window.addEventListener('pageshow', function(event) {
+            const fullscreen = document.getElementById('matrix-fullscreen-article');
+            if (fullscreen) {
+                fullscreen.classList.remove('active');
+                fullscreen.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

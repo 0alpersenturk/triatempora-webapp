@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://triatempora.com/sitemap.xml
+
+# Spanish content
+Allow: /es/
+
+# Category folders
+Allow: /ancient/
+Allow: /consciousness/
+Allow: /conspiracy/
+Allow: /forbidden/
+Allow: /mystical/
+Allow: /secret/
+Allow: /ufo/
+Allow: /matrix/
+
+# Crawl delay (optional - only use if server has load issues)
+# Crawl-delay: 1

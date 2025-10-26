@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore ancient civilizations, UFO encounters, consciousness mysteries, and forbidden science. Uncover hidden truths about lost technologies, secret government projects, and unexplained phenomena. Time is not a straight line.">
+    <meta name="keywords" content="ancient wisdom, lost civilizations, consciousness, astral projection, UFO sightings, alien contact, conspiracy theories, new world order, forbidden science, free energy, mystical geography, ley lines, secret projects, MKUltra, government cover-ups">
+    <title>Triatempora - Ancient Wisdom, Consciousness & Hidden Truths</title>
+    
+    <!-- Favicon - Multiple sizes for better display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://triatempora.com/">
+    <meta property="og:title" content="Triatempora - Ancient Wisdom, Consciousness & Hidden Truths">
+    <meta property="og:description" content="Discover ancient wisdom, consciousness mysteries, UFO files, conspiracy theories, and forbidden science. Time is not a straight line - explore hidden truths and unexplained phenomena.">
+    <meta property="og:image" content="https://triatempora.com/triatemporalogo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://triatempora.com/">
+    <meta name="twitter:title" content="Triatempora - Ancient Wisdom, Consciousness & Hidden Truths">
+    <meta name="twitter:description" content="Discover ancient wisdom, consciousness mysteries, UFO files, conspiracy theories, and forbidden science. Time is not a straight line.">
+    <meta name="twitter:image" content="https://triatempora.com/triatemporalogo.png">
+    <meta name="twitter:site" content="@triatempora">
+    
+    <!-- Additional Social -->
+    <meta property="og:site_name" content="Triatempora">
+    <meta property="article:author" content="https://instagram.com/triatempora">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="triatemporalogo.png" as="image">
+    
+    <!-- Prevent theme flash - Load theme immediately -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://triatempora.com/">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Triatempora RSS Feed" href="https://triatempora.com/rss.xml">
+    
+    <!-- hreflang tags for SEO -->
+    <link rel="alternate" hreflang="en" href="https://triatempora.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://triatempora.com/" />
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=block" rel="stylesheet">
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="/common.css">
+    
+    <style>
+        /* Page-specific styles for index.html */
+
+        /* Category hover effects - each category always shows its own color *//* Theme Toggle Switch */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: var(--border-color);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        .switch-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 24px;
+            height: 24px;
+            background: var(--card-bg);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+
+        html[data-theme="dark"] .theme-toggle,
+        [data-theme="dark"] .theme-toggle {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        html[data-theme="dark"] .switch-slider,
+        [data-theme="dark"] .switch-slider {
+            transform: translateX(30px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-link:hover {
+            transform: scale(1.2);
+        }
+
+        .social-link img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 24px;
+        }
+
+        .newsletter-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .newsletter-input {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+            border-color: var(--accent-color);
+        }
+
+        .newsletter-btn {
+            padding: 10px 15px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .newsletter-btn:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            /* Prevent layout shift */
+            min-height: 50px;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+        }
+
+        .footer-tagline {
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-disclaimer {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .footer-updated {
+            color: var(--text-secondary);
+            font-size: 0.65rem;
+            margin-top: 8px;
+            opacity: 0.7;
+        }
+
+        /* Search Styles */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        .search-box::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            pointer-events: none;
+            line-height: 1;
+        }
+
+        .search-results {
+            display: none;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        .search-results.show {
+            display: block;
+        }
+
+        .search-result-item {
+            display: block;
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-item:hover,
+        .search-result-item.active {
+            background: var(--bg-secondary);
+        }
+
+        .search-result-category {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .search-result-title {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .search-result-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .search-highlight {
+            background: rgba(220, 38, 38, 0.2);
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .search-clear {
+            position: absolute;
+            right: 45px;
+            top: 15px;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            line-height: 1;
+            padding: 5px;
+        }
+
+        .search-clear.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .search-clear:hover {
+            color: var(--accent-color);
+        }
+
+        /* Random Article Button */
+        .random-article-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 18px 35px;
+            background: linear-gradient(135deg, #ff0000, #ff8000);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.8s ease;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            animation: colorShift 8s ease-in-out infinite;
+        }
+
+        @keyframes colorShift {
+            0% { background: linear-gradient(135deg, #ff0000, #ff4000); }
+            12.5% { background: linear-gradient(135deg, #ff8000, #ffb000); }
+            25% { background: linear-gradient(135deg, #d4a017, #f0c040); }
+            37.5% { background: linear-gradient(135deg, #10b981, #14d99d); }
+            50% { background: linear-gradient(135deg, #0080ff, #00a0ff); }
+            62.5% { background: linear-gradient(135deg, #4000ff, #6020ff); }
+            75% { background: linear-gradient(135deg, #8000ff, #a020ff); }
+            87.5% { background: linear-gradient(135deg, #e91e63, #f44a7f); }
+            100% { background: linear-gradient(135deg, #ff0000, #ff4000); }
+        }
+
+        .random-article-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 25px rgba(220, 38, 38, 0.5);
+            animation-play-state: paused;
+        }
+
+        .random-article-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .random-icon {
+            font-size: 1.3rem;
+            animation: spin 2s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .random-article-btn:hover .random-icon {
+            animation-play-state: running;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Halloween Special Card */
+        .halloween-special {
+            max-width: 900px;
+            margin: 0 auto 50px;
+            background: linear-gradient(135deg, #1a0a0a 0%, #2d1810 50%, #1a0a0a 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3), 
+                        0 0 60px rgba(255, 140, 0, 0.2),
+                        inset 0 0 100px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(220, 38, 38, 0.3);
+            position: relative;
+            transition: all 0.4s ease;
+            animation: halloweenGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes halloweenGlow {
+            0%, 100% {
+                box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3), 
+                            0 0 60px rgba(255, 140, 0, 0.2),
+                            inset 0 0 100px rgba(0, 0, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 10px 50px rgba(220, 38, 38, 0.5), 
+                            0 0 80px rgba(255, 140, 0, 0.4),
+                            inset 0 0 100px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .halloween-special:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 60px rgba(220, 38, 38, 0.5), 
+                        0 0 100px rgba(255, 140, 0, 0.4),
+                        inset 0 0 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .halloween-special::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff8c00, #dc2626, #ff8c00, #dc2626);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: borderRotate 4s linear infinite;
+        }
+
+        @keyframes borderRotate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .halloween-special:hover::before {
+            opacity: 0.6;
+        }
+
+        .halloween-content {
+            display: flex;
+            gap: 30px;
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .halloween-icon-section {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            animation: float 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.6));
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(-5deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .halloween-text-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .halloween-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #dc2626, #ff8c00);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            width: fit-content;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .halloween-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff8c00, #dc2626, #ff8c00);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 100% center;
+            }
+        }
+
+        .halloween-description {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .halloween-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            width: fit-content;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+            border: 2px solid rgba(255, 140, 0, 0.3);
+        }
+
+        .halloween-cta:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.6);
+            background: linear-gradient(135deg, #ff8c00, #dc2626);
+        }
+
+        .halloween-cta-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .halloween-cta:hover .halloween-cta-arrow {
+            transform: translateX(5px);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .halloween-special {
+                margin: 0 15px 40px;
+            }
+
+            .halloween-content {
+                flex-direction: column;
+                padding: 30px 25px;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .halloween-icon-section {
+                font-size: 80px;
+            }
+
+            .halloween-badge {
+                margin: 0 auto;
+            }
+
+            .halloween-title {
+                font-size: 1.6rem;
+            }
+
+            .halloween-description {
+                font-size: 1rem;
+            }
+
+            .halloween-cta {
+                margin: 0 auto;
+                padding: 12px 28px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .tagline-section {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+                padding: 0 15px;
+            }
+
+            .theme-toggle {
+                width: 50px;
+                height: 25px;
+            }
+
+            .switch-slider {
+                width: 20px;
+                height: 20px;
+                font-size: 0.6rem;
+            }
+
+            html[data-theme="dark"] .switch-slider,
+            [data-theme="dark"] .switch-slider {
+                transform: translateX(25px);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px 20px;
+            }
+
+            .popup-form {
+                flex-direction: column;
+            }
+        }
+
+        /* Matrix Rain Animation */
+        .the-matrix {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .matrix-rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 1;
+        }
+
+        .the-matrix:hover .matrix-rain {
+            opacity: 0.6;
+        }
+
+        .the-matrix .category-icon,
+        .the-matrix .category-info,
+        .the-matrix .category-count {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Full Page Matrix Transition */
+        #matrix-fullscreen-transition {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        #matrix-fullscreen-transition.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .matrix-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ff41;
+            font-size: 2rem;
+            font-family: monospace;
+            text-align: center;
+            z-index: 10000;
+            opacity: 0;
+            animation: fadeInOut 2s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        /* Category Glow Effects on Hover */
+        .ancient-wisdom:hover {
+            box-shadow: 0 0 30px #ff0000, 0 0 60px #ff000080, 0 8px 40px #ff000060, inset 0 0 30px #ff000020 !important;
+            border-color: #ff0000 !important;
+            transform: translateY(-5px);
+        }
+
+        .consciousness:hover {
+            box-shadow: 0 0 30px #ff8000, 0 0 60px #ff800080, 0 8px 40px #ff800060, inset 0 0 30px #ff800020 !important;
+            border-color: #ff8000 !important;
+            transform: translateY(-5px);
+        }
+
+        .conspiracy-theories:hover {
+            box-shadow: 0 0 30px #d4a017, 0 0 60px #d4a01780, 0 8px 40px #d4a01760, inset 0 0 30px #d4a01720 !important;
+            border-color: #d4a017 !important;
+            transform: translateY(-5px);
+        }
+
+        .forbidden-science:hover {
+            box-shadow: 0 0 30px #10b981, 0 0 60px #10b98180, 0 8px 40px #10b98160, inset 0 0 30px #10b98120 !important;
+            border-color: #10b981 !important;
+            transform: translateY(-5px);
+        }
+
+        .mystical-geography:hover {
+            box-shadow: 0 0 30px #0080ff, 0 0 60px #0080ff80, 0 8px 40px #0080ff60, inset 0 0 30px #0080ff20 !important;
+            border-color: #0080ff !important;
+            transform: translateY(-5px);
+        }
+
+        .secret-projects:hover {
+            box-shadow: 0 0 30px #4000ff, 0 0 60px #4000ff80, 0 8px 40px #4000ff60, inset 0 0 30px #4000ff20 !important;
+            border-color: #4000ff !important;
+            transform: translateY(-5px);
+        }
+
+        .ufo-files:hover {
+            box-shadow: 0 0 30px #8000ff, 0 0 60px #8000ff80, 0 8px 40px #8000ff60, inset 0 0 30px #8000ff20 !important;
+            border-color: #8000ff !important;
+            transform: translateY(-5px);
+        }
+
+        .unexplained-phenomena:hover {
+            box-shadow: 0 0 30px #e91e63, 0 0 60px #e91e6380, 0 8px 40px #e91e6360, inset 0 0 30px #e91e6320 !important;
+            border-color: #e91e63 !important;
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Full Page Matrix Transition -->
+    <div id="matrix-fullscreen-transition">
+        <canvas id="matrix-transition-canvas"></canvas>
+        <div id="matrix-transition-message"></div>
+    </div>
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+
+        <div class="tagline-section">
+            <div class="tagline">Time is not a straight line</div>
+        </div>
+
+        <!-- Halloween Special Card -->
+        <div class="halloween-special">
+            <div class="halloween-content">
+                <div class="halloween-icon-section">
+                    🎃
+                </div>
+                <div class="halloween-text-section">
+                    <div class="halloween-badge">
+                        <span>👻</span>
+                        <span>HALLOWEEN SPECIAL</span>
+                        <span>🦇</span>
+                    </div>
+                    <h2 class="halloween-title">
+                        The Origins of Halloween: A Look at Old Traditions and New Ways to Celebrate
+                    </h2>
+                    <p class="halloween-description">
+                        Uncover the hidden truths behind Halloween's ancient Celtic origins, mysterious rituals of Samhain, and the supernatural forces that blur the veil between worlds each October 31st.
+                    </p>
+                    <a href="/ancient/halloween" class="halloween-cta">
+                        <span>Explore the Mystery</span>
+                        <span class="halloween-cta-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Revelations Carousel -->
+        <section class="recent-posts">
+            <div class="recent-posts-title">
+                <h3>Recent Explorations</h3>
+            </div>
+            <div class="carousel-container">
+                <div class="posts-list" id="postsList">
+                    <!-- Carousel content will be dynamically loaded by carousel-data.js -->
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn play-pause-btn" id="playPauseBtn" aria-label="Play/Pause">❚❚</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-box" placeholder="Search mysteries, ancient wisdom, consciousness, UFOs..." autocomplete="off">
+            <button class="search-clear" id="searchClear">&times;</button>
+            <div class="search-icon">🔍</div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <!-- Random Article Button -->
+        <button class="random-article-btn" id="randomArticleBtn">
+            <span class="random-icon">🎲</span>
+            <span>Surprise Me!</span>
+        </button>
+
+        <div class="categories">
+            <a href="/the-matrix" class="category-card the-matrix">
+                <div class="category-icon">🟢</div>
+                <div class="category-info">
+                    <div class="category-name">The Matrix - Digital Reality</div>
+                    <div class="category-desc">Red pill or blue pill? Explore simulation theory and the nature of reality</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">12</div>
+                    <div class="count-label">articles</div>
+                </div>
+                <canvas class="matrix-rain"></canvas>
+            </a>
+
+            <a href="/ancient-wisdom" class="category-card ancient-wisdom">
+                <div class="category-icon">🏺</div>
+                <div class="category-info">
+                    <div class="category-name">Ancient Wisdom & Lost Civilizations</div>
+                    <div class="category-desc">Explore ancient mysteries, lost civilizations, and forgotten knowledge</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">12</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/consciousness" class="category-card consciousness">
+                <div class="category-icon">👁</div>
+                <div class="category-info">
+                    <div class="category-name">Consciousness & Spiritual Reality</div>
+                    <div class="category-desc">Journey into altered states, psychic phenomena, and spiritual dimensions</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">10</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/conspiracy-theories" class="category-card conspiracy-theories">
+                <div class="category-icon">🔺</div>
+                <div class="category-info">
+                    <div class="category-name">Conspiracy Theories & Global Agenda</div>
+                    <div class="category-desc">Uncover hidden agendas, secret societies, and global power structures</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">11</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/forbidden-science" class="category-card forbidden-science">
+                <div class="category-icon">⚛️</div>
+                <div class="category-info">
+                    <div class="category-name">Forbidden Science & Experiments</div>
+                    <div class="category-desc">Uncover suppressed research, controversial experiments, and banned technologies</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">9</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/mystical-geography" class="category-card mystical-geography">
+                <div class="category-icon">🗿</div>
+                <div class="category-info">
+                    <div class="category-name">Mystical Geography & Hidden Places</div>
+                    <div class="category-desc">Discover legendary locations, lost cities, and mysterious landmarks</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">6</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/secret-projects" class="category-card secret-projects">
+                <div class="category-icon">🔐</div>
+                <div class="category-info">
+                    <div class="category-name">Secret Projects & Cover-ups</div>
+                    <div class="category-desc">Investigate classified programs, mind control, and government experiments</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">11</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/ufo-files" class="category-card ufo-files">
+                <div class="category-icon">🛸</div>
+                <div class="category-info">
+                    <div class="category-name">UFO Files & Alien Contact</div>
+                    <div class="category-desc">Examine UFO sightings, alien encounters, and extraterrestrial evidence</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">9</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+
+            <a href="/unexplained-phenomena" class="category-card unexplained-phenomena">
+                <div class="category-icon">🌀</div>
+                <div class="category-info">
+                    <div class="category-name">Unexplained Phenomena & Mysteries</div>
+                    <div class="category-desc">Explore baffling mysteries, paranormal events, and phenomena that defy explanation</div>
+                </div>
+                <div class="category-count">
+                    <div class="count-number">5</div>
+                    <div class="count-label">articles</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    
+
+    <!-- Confetti Library - Load first -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- Google Analytics - Loaded at the end for better performance -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW04R9KVD2"></script>
+    
+    <script>
+    // Google Analytics - Load first
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GW04R9KVD2');
+
+    // Search data loaded from external file (search-data.js)
+
+    function highlightText(text, searchTerm) {
+        if (!searchTerm || !text) return text;
+        try {
+            const escapedTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escapedTerm})`, 'gi');
+            return text.replace(regex, '<span class="search-highlight">$1</span>');
+        } catch (e) {
+            return text;
+        }
+    }
+
+    // OPTIMIZED Search - maksimum 5 sonuç
+    function performSearch(query) {
+        const searchResults = document.getElementById('searchResults');
+        const searchClear = document.getElementById('searchClear');
+        
+        if (!query || query.length < 2) {
+            if (searchResults) searchResults.classList.remove('show');
+            if (searchClear) searchClear.classList.remove('show');
+            return;
+        }
+
+        const queryLower = query.toLowerCase();
+        const data = searchData; // Use global searchData from search-data.js
+        const results = [];
+        
+        // Maksimum 5 sonuç bul
+        for (let i = 0; i < data.length && results.length < 5; i++) {
+            const item = data[i];
+            if (item.title.toLowerCase().includes(queryLower) || 
+                item.keywords.some(k => k.includes(queryLower))) {
+                results.push(item);
+            }
+        }
+
+        displayResults(results, query);
+    }
+
+    function displayResults(results, query) {
+        const resultsContainer = document.getElementById('searchResults');
+        const clearButton = document.getElementById('searchClear');
+
+        if (!resultsContainer || !clearButton) return;
+
+        if (results.length === 0) {
+            resultsContainer.innerHTML = '<div class="no-results">No mysteries found. Try different keywords.</div>';
+        } else {
+            const fragment = document.createDocumentFragment();
+            results.forEach(item => {
+                const a = document.createElement('a');
+                a.href = item.url;
+                a.className = 'search-result-item';
+                a.innerHTML = `
+                    <div class="search-result-category">${item.category}</div>
+                    <div class="search-result-title">${highlightText(item.title, query)}</div>
+                    <div class="search-result-description">${highlightText(item.description, query)}</div>
+                `;
+                fragment.appendChild(a);
+            });
+            resultsContainer.innerHTML = '';
+            resultsContainer.appendChild(fragment);
+        }
+
+        resultsContainer.classList.add('show');
+        clearButton.classList.add('show');
+    }
+
+    function clearSearch() {
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const searchClear = document.getElementById('searchClear');
+        
+        if (searchInput) searchInput.value = '';
+        if (searchResults) searchResults.classList.remove('show');
+        if (searchClear) searchClear.classList.remove('show');
+    }
+
+    // Initialize search on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        // Search functionality - DEBOUNCED
+        const searchInput = document.getElementById('searchInput');
+        const searchClear = document.getElementById('searchClear');
+        let searchTimeout;
+
+        if (searchInput) {
+            searchInput.addEventListener('input', function (e) {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    performSearch(e.target.value);
+                }, 500); // Increased timeout
+            });
+        }
+
+        if (searchClear) {
+            searchClear.addEventListener('click', clearSearch);
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.search-container')) {
+                const searchResults = document.getElementById('searchResults');
+                if (searchResults) {
+                    searchResults.classList.remove('show');
+                }
+            }
+        });
+    });
+
+    // Matrix Rain Animation (Card Hover)
+    document.addEventListener('DOMContentLoaded', function() {
+        const canvas = document.querySelector('.matrix-rain');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size
+        function resizeCanvas() {
+            const card = canvas.parentElement;
+            canvas.width = card.offsetWidth;
+            canvas.height = card.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Matrix characters - katakana, latin letters, numbers
+        const chars = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const matrixWord = 'MATRIX';
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        
+        // Array to store y position and state for each column
+        const drops = [];
+        for (let i = 0; i < columns; i++) {
+            drops[i] = {
+                y: Math.random() * -100,
+                showMatrix: Math.random() > 0.85, // 15% chance to show MATRIX
+                matrixIndex: 0
+            };
+        }
+
+        function draw() {
+            // Semi-transparent black to create fade effect
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.font = fontSize + 'px monospace';
+
+            // Draw characters
+            for (let i = 0; i < drops.length; i++) {
+                const drop = drops[i];
+                const x = i * fontSize;
+                const y = drop.y * fontSize;
+
+                // Decide what to draw
+                let char;
+                if (drop.showMatrix && drop.matrixIndex < matrixWord.length) {
+                    // Show MATRIX letter
+                    char = matrixWord[drop.matrixIndex];
+                    ctx.fillStyle = '#ffffff'; // White for MATRIX letters
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = '#00ff41';
+                    drop.matrixIndex++;
+                } else {
+                    // Show random character
+                    char = chars[Math.floor(Math.random() * chars.length)];
+                    ctx.fillStyle = '#00ff41';
+                    ctx.shadowBlur = 0;
+                }
+
+                ctx.fillText(char, x, y);
+
+                // Reset drop to top randomly
+                if (y > canvas.height && Math.random() > 0.975) {
+                    drop.y = 0;
+                    drop.showMatrix = Math.random() > 0.85; // New chance for MATRIX
+                    drop.matrixIndex = 0;
+                }
+
+                drop.y++;
+            }
+        }
+
+        // Animation loop with speed control
+        let animationId;
+        let lastTime = 0;
+        const fps = 12; // Frames per second (lower = slower)
+        const interval = 1000 / fps;
+        
+        function animate(currentTime) {
+            animationId = requestAnimationFrame(animate);
+            
+            const deltaTime = currentTime - lastTime;
+            if (deltaTime < interval) return;
+            
+            lastTime = currentTime - (deltaTime % interval);
+            draw();
+        }
+
+        // Start animation on hover
+        const matrixCard = canvas.closest('.the-matrix');
+        matrixCard.addEventListener('mouseenter', () => {
+            animate();
+        });
+
+        matrixCard.addEventListener('mouseleave', () => {
+            cancelAnimationFrame(animationId);
+            // Clear canvas
+            ctx.fillStyle = 'rgba(0, 0, 0, 1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        });
+    });
+
+    // Random Article Button
+    document.addEventListener('DOMContentLoaded', function() {
+        const randomBtn = document.getElementById('randomArticleBtn');
+        if (randomBtn) {
+            randomBtn.addEventListener('click', function() {
+                // Get a random article from carousel data
+                if (typeof carouselArticles !== 'undefined' && carouselArticles.length > 0) {
+                    const randomArticle = carouselArticles[Math.floor(Math.random() * carouselArticles.length)];
+                    const targetUrl = '/' + randomArticle.url;
+                    
+                    // ULTRA MASSIVE Confetti explosion!
+                    if (typeof confetti !== 'undefined') {
+                        const count = 400;
+                        const defaults = {
+                            origin: { y: 0.7 }
+                        };
+
+                        function fire(particleRatio, opts) {
+                            confetti(Object.assign({}, defaults, opts, {
+                                particleCount: Math.floor(count * particleRatio)
+                            }));
+                        }
+
+                        // Initial HUGE burst
+                        fire(0.5, {
+                            spread: 26,
+                            startVelocity: 55,
+                        });
+                        fire(0.4, {
+                            spread: 60,
+                        });
+                        fire(0.6, {
+                            spread: 100,
+                            decay: 0.91,
+                            scalar: 0.8
+                        });
+                        fire(0.3, {
+                            spread: 120,
+                            startVelocity: 25,
+                            decay: 0.92,
+                            scalar: 1.2
+                        });
+                        fire(0.3, {
+                            spread: 120,
+                            startVelocity: 45,
+                        });
+                        
+                        // INTENSE continuous confetti rain from everywhere
+                        let duration = 1000;
+                        let animationEnd = Date.now() + duration;
+                        let interval = setInterval(function() {
+                            let timeLeft = animationEnd - Date.now();
+
+                            if (timeLeft <= 0) {
+                                return clearInterval(interval);
+                            }
+
+                            let particleCount = 100 * (timeLeft / duration);
+                            
+                            // Multiple simultaneous bursts
+                            for (let i = 0; i < 3; i++) {
+                                confetti({
+                                    particleCount: particleCount / 3,
+                                    startVelocity: 30,
+                                    spread: 360,
+                                    origin: {
+                                        x: Math.random(),
+                                        y: Math.random() - 0.2
+                                    }
+                                });
+                            }
+                        }, 30);
+                        
+                        // Extra side cannons
+                        setTimeout(() => {
+                            confetti({
+                                particleCount: 150,
+                                angle: 60,
+                                spread: 100,
+                                origin: { x: 0, y: 0.6 }
+                            });
+                            confetti({
+                                particleCount: 150,
+                                angle: 120,
+                                spread: 100,
+                                origin: { x: 1, y: 0.6 }
+                            });
+                        }, 100);
+                        
+                        setTimeout(() => {
+                            confetti({
+                                particleCount: 150,
+                                angle: 60,
+                                spread: 100,
+                                origin: { x: 0, y: 0.6 }
+                            });
+                            confetti({
+                                particleCount: 150,
+                                angle: 120,
+                                spread: 100,
+                                origin: { x: 1, y: 0.6 }
+                            });
+                        }, 300);
+                    }
+                    
+                    // Wait for confetti then navigate
+                    setTimeout(() => {
+                        // Check if it's a Matrix article
+                        if (randomArticle.category.includes('Matrix') || targetUrl.includes('/matrix/')) {
+                        // Use Matrix transition
+                        const fullscreen = document.getElementById('matrix-fullscreen-transition');
+                        const canvas = document.getElementById('matrix-transition-canvas');
+                        const messageDiv = document.getElementById('matrix-transition-message');
+                        
+                        if (fullscreen && canvas && messageDiv) {
+                            const ctx = canvas.getContext('2d');
+                            messageDiv.textContent = randomArticle.message || 'FOLLOW THE WHITE RABBIT...';
+                            canvas.width = window.innerWidth;
+                            canvas.height = window.innerHeight;
+                            fullscreen.classList.add('active');
+                            
+                            const chars = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                            const fontSize = 16;
+                            const columns = canvas.width / fontSize;
+                            const drops = [];
+                            for (let i = 0; i < columns; i++) drops[i] = 1;
+                            
+                            function draw() {
+                                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                                ctx.fillStyle = '#00ff41';
+                                ctx.font = fontSize + 'px monospace';
+                                for (let i = 0; i < drops.length; i++) {
+                                    const char = chars[Math.floor(Math.random() * chars.length)];
+                                    ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+                                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                                    drops[i]++;
+                                }
+                            }
+                            
+                            let frameCount = 0;
+                            function animate() {
+                                draw();
+                                frameCount++;
+                                if (frameCount < 120) {
+                                    requestAnimationFrame(animate);
+                                } else {
+                                    window.location.href = targetUrl;
+                                }
+                            }
+                            animate();
+                        } else {
+                            window.location.href = targetUrl;
+                        }
+                        } else {
+                            // Regular navigation for non-Matrix articles
+                            window.location.href = targetUrl;
+                        }
+                    }, 1200); // Wait 1200ms for confetti show
+                }
+            });
+        }
+    });
+
+    // Matrix transition - Direct implementation for index.html
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+            const matrixCard = document.querySelector('.category-card.the-matrix');
+            if (!matrixCard) {
+                console.log('Matrix card not found');
+                return;
+            }
+            
+            console.log('Matrix card found, attaching click event');
+            
+            matrixCard.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Matrix card clicked!');
+                
+                const fullscreen = document.getElementById('matrix-fullscreen-transition');
+                const canvas = document.getElementById('matrix-transition-canvas');
+                const messageDiv = document.getElementById('matrix-transition-message');
+                
+                if (!fullscreen || !canvas || !messageDiv) {
+                    console.log('Missing elements, redirecting directly');
+                    window.location.href = '/the-matrix';
+                    return;
+                }
+                
+                const ctx = canvas.getContext('2d');
+                messageDiv.textContent = 'WAKE UP, NEO';
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                fullscreen.classList.add('active');
+                
+                const chars = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                const fontSize = 16;
+                const columns = canvas.width / fontSize;
+                const drops = [];
+                for (let i = 0; i < columns; i++) drops[i] = 1;
+                
+                function draw() {
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = '#00ff41';
+                    ctx.font = fontSize + 'px monospace';
+                    for (let i = 0; i < drops.length; i++) {
+                        const char = chars[Math.floor(Math.random() * chars.length)];
+                        ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+                        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                        drops[i]++;
+                    }
+                }
+                
+                let frameCount = 0;
+                function animate() {
+                    draw();
+                    frameCount++;
+                    if (frameCount < 120) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        window.location.href = '/the-matrix';
+                    }
+                }
+                animate();
+            });
+        }, 600);
+    });
+    </script>
+    
+    <!-- Common JavaScript -->
+    <script src="/carousel-data.js"></script>
+    <script src="/common.js"></script>
+    <script src="/search-data.js"></script>
+
+</body>
+</html>
