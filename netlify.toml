@@ -3,6 +3,10 @@
   publish = "public"
   functions = "netlify/functions"
 
+# Disable Next.js auto-detection
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 # Security headers
 [[headers]]
   for = "/*"
