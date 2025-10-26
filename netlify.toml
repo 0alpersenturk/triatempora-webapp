@@ -23,8 +23,94 @@
 [build.processing.html]
   pretty_urls = true
 
-# Redirects for dynamic routes
+# Redirects for dynamic routes - FIXED
 [[redirects]]
-  from = "/*"
+  from = "/ancient-wisdom"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/consciousness"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/conspiracy-theories"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/forbidden-science"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/mystical-geography"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/secret-projects"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/ufo-files"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/unexplained-phenomena"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/the-matrix"
+  to = "/.netlify/functions/server"
+  status = 200
+
+# Article routes
+[[redirects]]
+  from = "/ancient/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/consciousness/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/conspiracy/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/forbidden/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/mystical/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/secret/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/ufo/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/unexplained/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+[[redirects]]
+  from = "/matrix/*"
   to = "/.netlify/functions/server"
   status = 200
