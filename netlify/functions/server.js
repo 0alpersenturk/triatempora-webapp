@@ -28,6 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get('/', (req, res) => {
+    console.log('Rendering index page');
     res.render('index', { 
         title: 'Triatempora - Ancient Wisdom, Consciousness & Hidden Truths',
         currentPage: 'home'
@@ -70,6 +71,7 @@ app.get('/the-matrix', (req, res) => {
 });
 
 app.get('/ancient-wisdom', (req, res) => {
+    console.log('Rendering ancient-wisdom page');
     res.render('ancient-wisdom', { 
         title: 'Ancient Wisdom & Lost Civilizations - Triatempora',
         currentPage: 'ancient-wisdom'
@@ -140,6 +142,8 @@ categories.forEach(category => {
         const articleName = req.params.article.replace('.html', '');
         const viewPath = `${category}/${articleName}`;
         
+        console.log(`Rendering article: ${viewPath}`);
+        
         res.render(viewPath, { 
             title: `${articleName} - Triatempora`,
             currentPage: category,
@@ -157,6 +161,7 @@ categories.forEach(category => {
 
 // 404 Error Handler
 app.use((req, res) => {
+    console.log(`404 - Page not found: ${req.url}`);
     res.status(404).render('404', { 
         title: '404 - Page Not Found - Triatempora',
         currentPage: '404'
@@ -171,8 +176,23 @@ app.use((req, res) => {
 
 // Error Handler
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send('Something went wrong!');
+    console.error('Error:', err.message);
+    console.error('Stack:', err.stack);
+    console.error('Request URL:', req.url);
+    console.error('Request Method:', req.method);
+    
+    // Try to render 404 page first
+    res.status(404).render('404', { 
+        title: '404 - Page Not Found - Triatempora',
+        currentPage: '404'
+    }, (renderErr, html) => {
+        if (renderErr) {
+            console.error('404 render error:', renderErr);
+            res.status(404).send('<h1>404 - Page Not Found</h1><p>The page you are looking for does not exist.</p>');
+        } else {
+            res.send(html);
+        }
+    });
 });
 
 // Export as serverless function
